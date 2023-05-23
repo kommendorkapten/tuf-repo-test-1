@@ -1,0 +1,77 @@
+{
+ "signatures": [
+  {
+   "keyid": "057a658c3f9630254e57444dc6a2f83352b1fab4af69633325a0dd71b6dd8613",
+   "sig": "304502210096b333611c255ca489b23e1402ac06f312462263fa4ea90633b383dc67cd081e02203afcee4f13fe02ee7f7f972a99f5688a93834177135dd674994a28a0378263fd"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2023-11-19T11:30:53Z",
+  "keys": {
+   "057a658c3f9630254e57444dc6a2f83352b1fab4af69633325a0dd71b6dd8613": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0rNfVtW3SeL8+k+YOr9JrlNUYJz4\nAehc/gALb0xuQnsrb/5yx61wt3mspeqoQgvQ7iXi1uVrq+9GWTjmhHxdpg==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@kommendorkapten"
+   },
+   "abcd": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/kommendorkapten/tuf-repo-test-1/.github/workflows/snapshot.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-playground-online-uri": "sigstore:"
+   },
+   "efgh": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/kommendorkapten/tuf-repo-test-1/.github/workflows/version-bumps.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-playground-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "057a658c3f9630254e57444dc6a2f83352b1fab4af69633325a0dd71b6dd8613"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "abcd",
+     "efgh"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 180,
+    "x-playground-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "057a658c3f9630254e57444dc6a2f83352b1fab4af69633325a0dd71b6dd8613"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "abcd",
+     "efgh"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 21,
+    "x-playground-signing-period": 7
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-playground-expiry-period": 180,
+  "x-playground-signing-period": 60
+ }
+}
