@@ -1,0 +1,65 @@
+{
+ "signatures": [
+  {
+   "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
+   "sig": "3045022017f8d04acbd4e5792fdc0a7cf25b2c55eb1e9e2177c00e04a841ef243c5628c5022100d4d1deaaddb508b66a753cf2836cd266153a69c05c7b57f738d49e5436dbdcfc"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2024-06-14T11:42:02Z",
+  "keys": {
+   "8b4af6aec66518bc66718474aa15c8becd3286e8e2b958c497a60a828d591d04": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE95qxD+/kX6oCace7hrfChtz2IYGK\nHNBmUwtf3wXH0VEdLPWVoFgGITonvA7vxqYrF8ZzAeeZYNyEBbod7SEeaw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-online-uri": "azurekms://fsn-vault-1.vault.azure.net/keys/ec-key-1/b1089bbf068742d483970282f02090de"
+   },
+   "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE++Wv+DcLRk+mfkmlpCwl1GUi9EMh\npBUTz8K0fH7bE4mQuViGSyWA/eyMc0HvzZi6Xr0diHw0/lUPBvok214YQw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@kommendorkapten"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "8b4af6aec66518bc66718474aa15c8becd3286e8e2b958c497a60a828d591d04"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 365,
+    "x-playground-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "8b4af6aec66518bc66718474aa15c8becd3286e8e2b958c497a60a828d591d04"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 2,
+    "x-playground-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-playground-expiry-period": 365,
+  "x-playground-signing-period": 60
+ }
+}
