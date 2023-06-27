@@ -13,7 +13,7 @@ jobs:
     name: Playground signing event
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       issues: write
     steps:
       - name: Signing event
