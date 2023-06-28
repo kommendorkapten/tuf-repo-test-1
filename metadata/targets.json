@@ -2,19 +2,19 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "3044022020708aade9be817e8ef29a6913f9f9f2b1a61ffedd7fc1be1691efce6dda9a550220258e8225041c316e067090badfa4157baa515daa544091942694ebcc893cab61"
+   "sig": "30450220462864faf90752f35e37229478002ee5d9cb88f556a26aaee0344f90a973529f022100a7af32663495eb5b9744fd0a54503b45fa7b99c4491ee47ee278c521f4e3903f"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2024-06-14T12:05:03Z",
+  "expires": "2024-06-27T06:56:22Z",
   "spec_version": "1.0.31",
   "targets": {
    "file1.txt": {
     "hashes": {
-     "sha256": "ecdc5536f73bdae8816f0ea40726ef5e9b810d914493075903bb90623d97b1d8"
+     "sha256": "fb2accac2463f37fe4453a7fa4908cb5568f3bfc5f94ce4f53a5ef4858d3567b"
     },
-    "length": 6
+    "length": 15
    },
    "file2.txt": {
     "hashes": {
@@ -23,7 +23,7 @@
     "length": 6
    }
   },
-  "version": 2,
+  "version": 3,
   "x-playground-expiry-period": 365,
   "x-playground-signing-period": 60
  }
