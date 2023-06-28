@@ -17,7 +17,7 @@ jobs:
       generated: ${{ steps.online-bump.outputs.generated }}
     steps:
       - id: online-bump
-        uses: jku/repository-playground/playground/actions/online-version-bump@main
+        uses: kommendorkapten/repository-playground/playground/actions/snapshot@configurable-deployment
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
@@ -26,6 +26,8 @@ jobs:
         with:
           gcp_workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           gcp_service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+          metadata_path: /
+          targets_path: targets
 
   offline-version-bump:
     runs-on: ubuntu-latest
