@@ -17,7 +17,7 @@ jobs:
       generated: ${{ steps.online-bump.outputs.generated }}
     steps:
       - id: online-bump
-        uses: kommendorkapten/repository-playground/playground/actions/snapshot@configurable-deployment
+        uses: jku/repository-playground/playground/actions/online-version-bump@main
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
