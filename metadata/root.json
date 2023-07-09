@@ -2,13 +2,13 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "30440220436e085a4f3aaf5b2fa7298e7c48d8368810ef2b7e6f23c66d4d09c02f2332cf022037c22e1025c02708de9bf2b59ffa6d5d980756547fbf0eac7bf1452545186c51"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2023-07-14T13:50:21Z",
+  "expires": "2023-07-19T19:19:14Z",
   "keys": {
    "8b4af6aec66518bc66718474aa15c8becd3286e8e2b958c497a60a828d591d04": {
     "keytype": "ecdsa",
@@ -58,7 +58,7 @@
    }
   },
   "spec_version": "1.0.31",
-  "version": 5,
+  "version": 6,
   "x-playground-expiry-period": 10,
   "x-playground-signing-period": 5
  }
